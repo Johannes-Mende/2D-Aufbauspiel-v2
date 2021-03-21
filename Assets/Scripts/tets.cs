@@ -6,7 +6,7 @@ using TMPro;
 
 public class tets: MonoBehaviour
 {
-    public Ore ore; 
+   /* public Ore ore; 
     
     public TMPro.TMP_Text maxAmounttext;
     public TMPro.TMP_Text currentAmounttext;
@@ -37,4 +37,5 @@ public class tets: MonoBehaviour
             yield return new WaitUntil(() => ore.refillrateActiv = true);
         }
     }
+    */
 }

@@ -6,7 +6,7 @@ using TMPro;
 
 public class tets: MonoBehaviour
 {
-   /* public Ore ore; 
+   /* public Ore ore;                           //this Script belong to Silverore Prefab
     
     public TMPro.TMP_Text maxAmounttext;
     public TMPro.TMP_Text currentAmounttext;

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OrInventory : MonoBehaviour
+public class OreInventory : MonoBehaviour
 {
     #region Ore
     public new string name;

@@ -34,7 +34,7 @@ public class tets: MonoBehaviour
         {
            ore.currentAmount += ore.refillAmount;
            Debug.Log("Rechung ist geglückt");
-            yield return new WaitUntil(() => ore.refillrateActiv = false);
+            yield return new WaitUntil(() => ore.refillrateActiv = true);
         }
     }
 }

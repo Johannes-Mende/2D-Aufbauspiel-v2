@@ -15,7 +15,7 @@ MonoBehaviour:
   name: SilverOre
   Sprite: {fileID: 0}
   maxAmount: 20
-  currentAmount: 15
+  currentAmount: 20
   refillAmount: 2
   timeinterval: 2
   refillrateActiv: 0

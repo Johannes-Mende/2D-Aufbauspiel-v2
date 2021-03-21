@@ -26,6 +26,7 @@ public class ResourceManager : MonoBehaviour
         {
             Debug.Log("Abbau");
             OInv.currentAmount -= PInv.PlayerAbbauAmount;
+            PInv.SilverAmountplayer += PInv.PlayerAbbauAmount;
         }
         
     }

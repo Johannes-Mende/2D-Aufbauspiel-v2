@@ -11,8 +11,8 @@ public class OreInventory : MonoBehaviour
     public TMPro.TMP_Text maxAmounttext;
     public TMPro.TMP_Text currentAmounttext;
     #endregion
-
-
+    
+    public bool PlayerInRange;
 
     void Start()
     {
@@ -25,9 +25,5 @@ public class OreInventory : MonoBehaviour
         currentAmounttext.SetText(currentAmount.ToString());
     }
 
-    public void Abbau()
-    {
-
-    }
 
 }

@@ -5,10 +5,11 @@ using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
-    private ResourceManager RM;
+
     public TMPro.TMP_Text silverAmounttext;
 
     public float PlayerAbbauAmount = 1;
+    public float SilverAmountplayer;    //RM.SilverAmountplayer muss hier definiert werden??
 
     void Start()
     {
@@ -18,6 +19,6 @@ public class PlayerInventory : MonoBehaviour
 
     void Update()
     {
-        silverAmounttext.SetText(RM.SilverAmountplayer.ToString());
+        silverAmounttext.SetText(SilverAmountplayer.ToString());
     }
 }

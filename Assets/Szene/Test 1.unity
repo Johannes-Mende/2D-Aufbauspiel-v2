@@ -223,7 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54084ba5e6bfa824989d734182ae31ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SilverAmounttext: {fileID: 833729672}
+  silverAmounttext: {fileID: 833729672}
+  PlayerAbbauAmount: 1
+  SilverAmountplayer: 0
 --- !u!1 &132968380
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,7 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fad2b59aa91ce4cbca499638f53072, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SilverAmountplayer: 0
+  OInv: {fileID: 1283934450}
+  PInv: {fileID: 44664360}
 --- !u!4 &132968382
 Transform:
   m_ObjectHideFlags: 0
@@ -400,30 +403,6 @@ MonoBehaviour:
   smooth: 1
   followY: 0
   target: {fileID: 44664359}
---- !u!114 &627288420 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5647018862103350643, guid: ed003d7581f36cc4d8f75f9e5f936d70,
-    type: 3}
-  m_PrefabInstance: {fileID: 1952692959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &786534879 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5647018862141351483, guid: ed003d7581f36cc4d8f75f9e5f936d70,
-    type: 3}
-  m_PrefabInstance: {fileID: 1952692959}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &787811883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -636,29 +615,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 833729670}
   m_CullTransparentMesh: 0
---- !u!1 &1283934449 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5647018860474537096, guid: ed003d7581f36cc4d8f75f9e5f936d70,
+--- !u!114 &1283934450 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1283934450, guid: ed003d7581f36cc4d8f75f9e5f936d70,
     type: 3}
   m_PrefabInstance: {fileID: 1952692959}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1283934450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1283934449}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9721662b2bf5c82418b885de7f45f0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: SilverOre
-  maxAmount: 2000
-  currentAmount: 2000
-  maxAmounttext: {fileID: 627288420}
-  currentAmounttext: {fileID: 786534879}
 --- !u!1 &1483060969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,11 +979,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SilverOre Dev
-      objectReference: {fileID: 0}
-    - target: {fileID: 5647018860474537097, guid: ed003d7581f36cc4d8f75f9e5f936d70,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5647018860474537100, guid: ed003d7581f36cc4d8f75f9e5f936d70,
         type: 3}

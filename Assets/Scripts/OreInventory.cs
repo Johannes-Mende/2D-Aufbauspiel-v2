@@ -12,6 +12,7 @@ public class OreInventory : MonoBehaviour
     public TMPro.TMP_Text currentAmounttext;
     #endregion
     
+    
     public bool PlayerInRange;
 
     void Start()
@@ -23,7 +24,19 @@ public class OreInventory : MonoBehaviour
     {
         maxAmounttext.SetText(maxAmount.ToString());            //Konvertieren von den Float werten in Text für Text Mesh Pro
         currentAmounttext.SetText(currentAmount.ToString());
+
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            PlayerInRange = true;
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D other) 
+    {
+        PlayerInRange = false;
+    }
 }

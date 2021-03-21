@@ -146,7 +146,8 @@ GameObject:
   - component: {fileID: 5647018860474537102}
   - component: {fileID: 604674838813371572}
   - component: {fileID: 5647018860474537097}
-  - component: {fileID: 7346768269428563997}
+  - component: {fileID: 1283934450}
+  - component: {fileID: 1283934451}
   m_Layer: 8
   m_Name: SilverOre Dev
   m_TagString: Minable
@@ -249,7 +250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5647018860474537096}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a5b5aed2edb81154fac871019e757dad, type: 3}
   m_Name: 
@@ -258,18 +259,40 @@ MonoBehaviour:
   maxAmounttext: {fileID: 5647018862103350643}
   currentAmounttext: {fileID: 5647018862141351483}
   refillAmounttext: {fileID: 5647018861822102048}
---- !u!114 &7346768269428563997
+--- !u!114 &1283934450
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5647018860474537096}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88f69ae446e50a74ea32348568082166, type: 3}
+  m_Script: {fileID: 11500000, guid: 9721662b2bf5c82418b885de7f45f0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  name: SilverOre
+  maxAmount: 2000
+  currentAmount: 2000
+  maxAmounttext: {fileID: 5647018862103350643}
+  currentAmounttext: {fileID: 5647018862141351483}
+  PlayerInRange: 0
+--- !u!58 &1283934451
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5647018860474537096}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.2752506
 --- !u!1 &5647018860641188226
 GameObject:
   m_ObjectHideFlags: 0

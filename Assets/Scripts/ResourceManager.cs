@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-    public OreInventory OInv;
-
+  
     //public float SilverAmountplayer;
     void Start()
     {

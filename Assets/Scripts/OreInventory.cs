@@ -7,13 +7,13 @@ public class OreInventory : MonoBehaviour
     #region Ore
     public new string name;
     public float maxAmount;
-    public float currentAmount;
+    public static float currentAmount = 2000;
     public TMPro.TMP_Text maxAmounttext;
     public TMPro.TMP_Text currentAmounttext;
     #endregion
     
     
-    public bool PlayerInRange;
+    public static bool PlayerInRange;
 
     void Start()
     {

@@ -8,8 +8,8 @@ public class PlayerInventory : MonoBehaviour
 
     public TMPro.TMP_Text silverAmounttext;
 
-    public float PlayerAbbauAmount = 1;
-    public float SilverAmountplayer;    //RM.SilverAmountplayer muss hier definiert werden??
+    public static float PlayerAbbauAmount = 1;
+    public static float OrePlayerInventory;    //RM.SilverAmountplayer muss hier definiert werden??
 
     void Start()
     {
@@ -19,6 +19,6 @@ public class PlayerInventory : MonoBehaviour
 
     void Update()
     {
-        silverAmounttext.SetText(SilverAmountplayer.ToString());
+        silverAmounttext.SetText(OrePlayerInventory.ToString());
     }
 }

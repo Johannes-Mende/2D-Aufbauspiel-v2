@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class ResourceManager : MonoBehaviour
 {
-    public OreInventory OInv;
-    public PlayerInventory PInv;
+  
     //public float SilverAmountplayer;
     void Start()
     {
@@ -22,11 +21,11 @@ public class ResourceManager : MonoBehaviour
 
     private void Abbau()
     {
-        if(OInv.PlayerInRange == true)
+        if(OreInventory.PlayerInRange == true)
         {
             Debug.Log("Abbau");
-            OInv.currentAmount -= PInv.PlayerAbbauAmount;
-            PInv.SilverAmountplayer += PInv.PlayerAbbauAmount;
+            OreInventory.currentAmount         -=  PlayerInventory.PlayerAbbauAmount;
+            PlayerInventory.OrePlayerInventory +=  PlayerInventory.PlayerAbbauAmount;
         }
         
     }

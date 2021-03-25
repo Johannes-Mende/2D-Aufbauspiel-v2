@@ -17,7 +17,9 @@ public class OreInventory : MonoBehaviour
 
     void Start()
     {
-        
+        OreStruct CopperOre = new OreStruct();
+        CopperOre.Name = "CopperOre";
+        CopperOre.Mänge = 4000;
     }
 
     void Update()
